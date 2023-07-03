@@ -1,0 +1,31 @@
+// Light
+@font-face {
+    font-family:'xb Primary';
+    src: url('../../fonts/Montserrat-Regular.ttf');
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: condensed;
+    font-display:block;
+    unicode-range: U+000D-FEFF;
+  }
+
+  // Bold
+@font-face {
+    font-family:'xb Secondary';
+    src: url('../../fonts/Montserrat-Bold.ttf');
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: condensed;
+    font-display:block;
+    unicode-range: U+000D-FEFF;
+  }
+
+  @font-face {
+    font-family:'xb Thirty';
+    src: url('../../fonts/Montserrat-Light.ttf');
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: condensed;
+    font-display:block;
+    unicode-range: U+000D-FEFF;
+  }

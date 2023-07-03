@@ -1,10 +1,20 @@
 //boostrap import
-@import "bootstrap/bootstrap-grid.scss";
+@import "bootstrap/bootstrap-grid";
 
 //Vars scss import
-@import "scss/_var.scss";
+@import "scss/_var";
+
+//globals
+@import "scss/fonts";
+@import "scss/global";
+
+
+
+//Global elements import
+@import "scss/menu";
 
 //Pages scss import
-@import "scss/_home.scss";
+@import "scss/_home";
 
-//Blocks scss import
+//Components scss import
+@import "components/productListv1";
