@@ -1,6 +1,28 @@
+//Nunito bold black
+@font-face {
+  font-family:'xb Primary';
+  src: url('../../fonts/NunitoSans_10pt-Black.ttf');
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: condensed;
+  font-display:block;
+  unicode-range: U+000D-FEFF;
+}
+
+//Nunito normal medium
+@font-face {
+  font-family:'xb Primary medium';
+  src: url('../../fonts/NunitoSans_10pt-Medium.ttf');
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: condensed;
+  font-display:block;
+  unicode-range: U+000D-FEFF;
+}
+
 // Light
 @font-face {
-    font-family:'xb Primary';
+    font-family:'xb Primary light';
     src: url('../../fonts/Montserrat-Regular.ttf');
     font-weight: 400;
     font-style: normal;
