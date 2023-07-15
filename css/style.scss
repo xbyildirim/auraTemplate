@@ -6,6 +6,7 @@
 @import "scss/auraClass";
 
 //globals
+@import "scss/button";
 @import "scss/fonts";
 @import "scss/global";
 
@@ -19,3 +20,4 @@
 
 //Components scss import
 @import "components/productListv1";
+@import "scss/banner";

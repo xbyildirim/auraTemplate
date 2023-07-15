@@ -1,0 +1,85 @@
+.main-banner{
+    position: relative;
+    margin-bottom: 0.7vw;
+    .main-banner-container{
+        font-size: 0;
+        height: 0;
+        position: relative;
+        img{
+            width: 100%;
+        }
+        .main-banner-ticket{
+            max-width: 370px;
+            max-height: 210px;
+            color: $white;
+            background-color: $color2;
+            position: absolute;
+            display: flex;
+            width: 370px;
+            box-shadow: 0 5px 10px rgba(0,0,0,.1);
+            color: #fff;
+            font-size: calc(7px + .3vw);
+            font-weight: 900 !important;
+            text-shadow: 0 1px 1px rgba(0,0,0,.2);
+            text-align: center;
+            z-index: 20;
+            font-family: "Nunito Sans Black",sans-serif;
+            letter-spacing: 2px;
+            height: 4em;
+            line-height: 100%;
+            min-height: 20%;
+            align-items: center;
+            justify-content: center;
+            &::before{
+                content: "";
+                display: block;
+                padding-top: 100%;
+            }
+            &.left-ticket{
+                left: -107px;
+                top: 54px;
+                transform: rotate(-45deg);
+            }
+            &.right-ticket{
+                right: -107px;
+                top: 54px;
+                transform: rotate(-320deg);
+            }
+        }
+        .main-banner-text-container{
+            top: 300px;
+            background-color: rgba(0,0,0,0);
+            position: absolute;
+            text-align: center;
+            box-sizing: border-box;
+            min-width: 280px;
+            font-size: 18px;
+            font-weight: normal;
+            width: 50%;
+            font-family: Nunito Sans,sans-serif;
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            img{
+                max-width: 100%;
+                margin: 0px 25%;
+                width: 47.5%;
+            }
+            .main-banner-btn{
+                position: relative !important;
+                max-width: 300px !important;
+                margin-top: 10px;
+            }
+            &.left{
+                right: 30%;
+            }
+            &.right{
+                left: 75%;
+            }
+            &.center{
+                right: 50%;
+                left: 50%;
+            }
+        }
+    }
+}
