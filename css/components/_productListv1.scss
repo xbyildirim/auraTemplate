@@ -1,14 +1,15 @@
 .xb-ListOne{
-    background-color: $color2;
+    background-color: $white;
     position: relative;
     width: 100%;
-    color: $white;
+    color: $color1;
     h3{
         padding: 10px;
         font-family: $primary-font-medium;
         text-align: center;
         font-weight: 700;
-        width: 100%
+        width: 100%;
+        margin: 0;
     }
     .xb-ListOneCont{
         display: flex;
@@ -22,5 +23,120 @@
                 width: 100%;
             }
         } 
+    }
+}
+
+.xb-prList{
+    width: 100%;
+    font-family: $primary-font-medium;
+    position: relative;
+    display: block;
+    //Grid view version
+    &.type1{
+        width: 100%;
+        h3{
+            margin: 20px;
+            text-align: center;
+            font-weight: 900;
+        }
+        .prListGrid{
+            display: flex;
+            .product-card{
+                width: 400px;
+                flex: 1;
+                padding: 10px;
+                .product-item{
+                    color: $color1;
+                    text-decoration: none;
+                    width: 100%;
+                    position: relative;
+                    transition: opacity 1s ease;
+                    .darkShadow{
+                        margin: 0;
+                        padding: 0;
+                        overflow: hidden;
+                        a{
+                            img{
+                                width: 100%;
+                                transition: transform 0.3s ease;
+                            }
+                        }
+                    }
+                    .product-actions{
+                        position: absolute;
+                        top: 200px;
+                        display: flex;
+                        flex-wrap: wrap;
+                        width: 100%;
+                        a{
+                            opacity: 0;
+                            transition: opacity 1s ease;
+                            padding: 10px;
+                            margin: 5px;
+                            background-color: $color2;
+                            color: $color1;
+                            text-align: center;
+                            text-decoration: none;
+                            &:nth-child(1),
+                            &:nth-child(2){
+                                flex: 1;
+                            }
+                            &:nth-child(3){
+                                flex-basis: 100%;
+                                background-color: $color4;
+                                color: $white;
+                            }
+                        }
+                    }
+                    .product-text{
+                        font-family: $secondary-font;
+                        margin-top: 10px;
+                        .product-name, .product-desc{
+                            font-size: 18px;
+                            padding: 0;
+                            margin:0;
+                        }
+                        .product-name{
+                            color: $color2;
+                        }
+                        .product-desc{
+                            font-family: $primary-font-light;
+                        }
+                        .product-price{
+                            font-size: 16px;
+                        }
+                    }
+                    &:hover{
+                        .product-actions{
+                            a{
+                                opacity: 1;
+                            }
+                        }
+                        .darkShadow{
+                           a{
+                                img{
+                                    transform: scale(1.2);
+                                }
+                           }
+                        }
+                    }
+                }
+            }
+        }
+    } 
+    //Swiper version
+    &.type2{
+        width: 100%;
+        .swiper{
+            .swiper-wrapper{
+                .swiper-slide{
+                    .product-card{
+                        img{
+                            width: 400px;
+                        }
+                    }
+                }
+            }
+        }
     }
 }
