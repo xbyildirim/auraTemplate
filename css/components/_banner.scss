@@ -3,7 +3,7 @@
     margin-bottom: 0.7vw;
     .main-banner-container{
         font-size: 0;
-        height: 0;
+        height: auto;
         position: relative;
         img{
             width: 100%;
@@ -27,7 +27,7 @@
             letter-spacing: 2px;
             height: 4em;
             line-height: 100%;
-            min-height: 20%;
+            min-height: 3%;
             align-items: center;
             justify-content: center;
             &::before{
@@ -80,6 +80,62 @@
                 right: 50%;
                 left: 50%;
             }
+        }
+    }
+}
+
+.fw-banner{
+    font-family: $primary-font-light;
+    width: 100%;
+    background-image: url("https://ion.r2net.com/images/Campaigns/SummerSale23x9/HPBanner.jpg?v=10") ;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: auto;
+    height: 450px;
+    .text-container{
+        position: relative;
+        width: 25%;
+        height: auto;
+        top: 30%;
+        &.left{
+            left: 50px;
+        }
+        &.right{
+            margin-left: auto;
+            margin-right: 0px;
+            right: 200px;
+           
+        }
+        &.txt-left{
+            text-align: left;
+        }
+        &.txt-right{
+            text-align: right;
+        }
+        &.txt-center{
+            text-align: center;
+        }
+        &.txt-white{
+            color: $white !important;
+        }
+        &.txt-dark{
+            color: $dark !important;
+        }
+        &.txt-cl1{
+            color: $color1 !important;
+        }
+        &.txt-cl2{
+            color: $color2 !important;
+        }
+        &.txt-cl3{
+            color: $color3 !important;
+        }
+        h2{
+            font-family: $primary-font-medium;
+        }
+        .xb-btn{
+            width: 75%;
+            border-radius: 20px;
         }
     }
 }
