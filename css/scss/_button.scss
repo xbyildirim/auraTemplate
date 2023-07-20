@@ -20,6 +20,14 @@
                 color: $white;
             }
         }
+        &.pink{
+            color: $color2;
+            border: 1px solid $color2;
+            &:hover{
+                color: $white;
+                background-color: $color2;
+            }
+        }
     }
     &.xb-btn2{
         color: $color2;
