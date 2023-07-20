@@ -17,4 +17,12 @@ $('.prListGrid').on('mouseenter', function(e){
 })
 $('.prListGrid').on('mouseleave', function(e){    
     swipPrdct1.autoplay.start();
-}) 
+});
+
+var swipPrdct2 = new Swiper(".swipPrdct2", {
+    slidesPerView: 3,
+    spaceBetween: 0,
+    pagination: {
+        el: ".swiper-pagination",
+      },
+})
