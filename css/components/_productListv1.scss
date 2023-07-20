@@ -74,7 +74,7 @@
                             padding: 10px;
                             margin: 5px;
                             background-color: $color2;
-                            color: $color1;
+                            color: $white;
                             text-align: center;
                             text-decoration: none;
                             &:nth-child(1),
@@ -84,7 +84,6 @@
                             &:nth-child(3){
                                 flex-basis: 100%;
                                 background-color: $color4;
-                                color: $white;
                             }
                         }
                     }
@@ -121,22 +120,10 @@
                         }
                     }
                 }
-            }
-        }
-    } 
-    //Swiper version
-    &.type2{
-        width: 100%;
-        .swiper{
-            .swiper-wrapper{
-                .swiper-slide{
-                    .product-card{
-                        img{
-                            width: 400px;
-                        }
-                    }
+                &.product-card-swip{
+                    width: auto !important;
                 }
             }
         }
-    }
+    } 
 }
