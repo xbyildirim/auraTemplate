@@ -212,8 +212,7 @@
 
 .footerMenu{
     width: 100%;
-    position: absolute;
-    bottom: 0;
+    position: relative;
     background-color: $white;
     color: $dark;
     .xb-footer{
