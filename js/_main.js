@@ -24,5 +24,8 @@ var swipPrdct2 = new Swiper(".swipPrdct2", {
     spaceBetween: 0,
     pagination: {
         el: ".swiper-pagination",
-      },
+    },
+    autoplay: {
+        delay: 800,
+    },
 })
