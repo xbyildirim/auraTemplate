@@ -114,6 +114,7 @@
     display: block;
     padding: 15px;
     .container{
+        margin: 20px;
         .newsletterForm{
             width: 60%;
             margin: auto;
@@ -129,18 +130,21 @@
                     float: left;
                     width: 25%;
                     font-size: 24px;
-                    font-weight: 400;
+                    font-weight: 600;
+                    color: $white;
                 }
                 .emailInput{
                     float: left;
                     width: 60%;
                     margin-right: 15px;
                     .newsletterFormInput{
+                        outline: none;
+                        border: 0px;
                         line-height: 1.2;
                         font-size: 14px;
                         padding: 10px;
                         width: 100%;
-                        text-transform: lowercase;
+                        text-transform: none;
                     }
                 }
                 .sendBtn{
@@ -161,6 +165,28 @@
             font-size: 12px;
             font-family: $secondary-font;
             text-align: justify;
+        }
+    }
+}
+
+.auraCopyRight{
+    width: 100%;
+    text-align: center;
+    background-color: $color1;
+    color: $white;
+    font-weight: 700;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    a{
+        color: $white;
+        text-align: center;
+        text-decoration: none;
+        span{
+            color: $color2;
+            font-weight: 900;
         }
     }
 }
