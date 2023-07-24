@@ -87,10 +87,10 @@
 .fw-banner{
     font-family: $primary-font-light;
     width: 100%;
-    background-image: url("https://ion.r2net.com/images/Campaigns/SummerSale23x9/HPBanner.jpg?v=10") ;
+    background-image: url("https://emart.wpthemedemos.com/interior/wp-content/uploads/sites/9/2022/12/wide-section-full-scaled.webp") ;
     background-position: center center;
     background-repeat: no-repeat;
-    background-size: auto;
+    background-size: cover;
     height: 450px;
     .text-container{
         position: relative;
@@ -104,7 +104,10 @@
             margin-left: auto;
             margin-right: 0px;
             right: 200px;
-           
+        }
+        &.center{
+            margin: auto;
+            right: unset;
         }
         &.txt-left{
             text-align: left;
