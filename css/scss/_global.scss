@@ -3,3 +3,401 @@ body{
     font-weight: 400;
     overflow-x: hidden !important;
 }
+
+//Class List
+.main-container{
+    min-height: 300px !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+    width: calc(100% - 40px) !important;
+}
+
+.xb-t1{
+    margin-top: 1px !important;
+}
+
+.xb-t2{
+    margin-top: 2px !important;
+}
+
+.xb-t3{
+    margin-top: 3px !important;
+}
+
+.xb-t4{
+    margin-top: 4px !important;
+}
+
+.xb-t5{
+    margin-top: 5px !important;
+}
+
+.xb-t15{
+    margin-top: 15px !important;
+}
+//Class List end
+
+// Btn design
+.xb-btn{
+    width: 100%;
+    height: 35px;
+    font-size: .95vw;
+    margin: 0.3vw auto 0.5vw;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    letter-spacing: 1.38px;
+    text-decoration: none !important;
+    &.xb-btn1{
+        color: $black;
+        background-color: $transparent;
+        border: 1px solid $black;
+        &.black{
+            &:hover{
+                background-color: $black;
+                color: $white;
+            }
+        }
+        &.pink{
+            color: $color2;
+            border: 1px solid $color2;
+            &:hover{
+                color: $white;
+                background-color: $color2;
+            }
+        }
+    }
+    &.xb-btn2{
+        color: $color2;
+        background-color: $transparent;
+        border: 1px solid $color2;
+        &.black{
+            &:hover{
+                background-color: $color2;
+                color: $white;
+            }
+        }
+        &.white{
+            border: 1px solid $white !important;
+            &:hover{
+                background-color: $white;
+                color: $color2;
+            }
+        }
+    }
+}
+
+//Aura Main menu
+.auraMainMenu{
+    box-sizing: border-box;
+    display: flex;
+    height: 65px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+    .auraMenu{
+        box-sizing: border-box;
+        height: 100%;
+        width: 100%;
+        .auraMenuUl{
+            grid-template-columns: 1fr 3fr 1fr;
+            align-items: center;
+            background-color: $white;
+            box-sizing: border-box;
+            display: grid;
+            flex-direction: row;
+            grid-template-columns: 1fr 2fr 1fr;
+            height: 100%;
+            justify-content: space-between;
+            justify-items: space-between;
+            list-style: none;
+            padding: 0 30px;
+            position: relative;
+            .auraMenuUlLogo{
+                line-height: normal;
+                list-style: none;
+                .auraMenuLogo{
+                    color: inherit;
+                    text-decoration: none;
+                    width: 100%;
+                    align-items: center;
+                    box-sizing: border-box;
+                    display: flex;
+                    margin: 0;
+                    padding: 0;
+                    img{
+                        box-sizing: border-box;
+                        height: auto;
+                        margin: 0;
+                        padding: 0;
+                        width: 196px;
+                    }
+                }
+            }
+            .menu{
+                align-items: center;
+                display: flex;
+                flex-direction: row;
+                height: 100%;
+                justify-content: center;
+                justify-self: center;
+                list-style: none;
+                max-width: 757px;
+                padding: 0;
+                width: 100%;
+                .menu-item{
+                    list-style: none;
+                    height: 53px;
+                    line-height: normal;
+                    vertical-align: middle;
+                    margin: auto;
+                    .menu-item-a{
+                        align-items: center;
+                        background: $white;
+                        color: $color1;
+                        cursor: pointer;
+                        display: flex;
+                        flex-direction: column;
+                        font-family: $primary-font-light;
+                        font-size: 13px;
+                        height: 100%;
+                        justify-content: center;
+                        line-height: 16px;
+                        position: relative;
+                        text-decoration: none;
+                        text-transform: uppercase;
+                        &::before{
+                            color: $color1;
+                            content: attr(data-title);
+                            display: block;
+                            font-weight: 700;
+                            height: 1px;
+                            margin-bottom: -1px;
+                            overflow: hidden;
+                            visibility: hidden;
+                            width: 0;
+                        }
+                        &::after{
+                            border-bottom: 3px solid #ff8080;
+                            bottom: 0;
+                            content: "";
+                            display: block;
+                            left: 0;
+                            margin: 0 auto;
+                            position: absolute;
+                            right: 0;
+                            transition: width .1s ease;
+                            width: 0;
+                            z-index: 10000;
+                        }
+                        
+                    }
+                    .sub-menu-container{
+                        align-items: center;
+                        background: $white;
+                        box-sizing: initial;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        left: 0;
+                        padding-top: 0px;
+                        position: absolute;
+                        top: 85%;
+                        visibility: hidden;
+                        width: 100%;
+                        z-index: 9999;
+                        .sub-menu{
+                            background: linear-gradient(90deg,#fff 70%,#0000 0);
+                            display: flex;
+                            justify-content: center;
+                            margin: 0 auto;
+                            max-width: 1782px;
+                            min-height: 300px;
+                            padding: 30px;
+                            position: relative;
+                            width: calc(100% - 60px);
+                            z-index: 50;
+                            .sub-menu-column{
+                                border-left: none;
+                                padding-left: 0;
+                                width: 310px;
+                                font-family: $primary-font-light;
+                                .sub-menu-unit-title{
+                                    color: $color3;
+                                    font-size: 13px;
+                                    padding-bottom: 10px;
+                                    text-transform: uppercase;
+                                    font-family: $thirty-font;
+                                    font-weight: 900;
+                                    padding-right: 10px;
+                                }
+                                .sub-menu-unit-row{
+                                    display: flex;
+                                    padding-top: 10px;
+                                    .sub-menu-ul-column{
+                                        text-transform: capitalize;
+                                        margin-right: 0;
+                                        padding-left: 3px;
+                                        li{
+                                            list-style: none;
+                                            a{
+                                                font-family: $primary-font-light;
+                                                font-size: 14px;
+                                                display: inline-block;
+                                                text-decoration: none;
+                                                .menu-icons{
+                                                    padding-right: 2px;
+                                                }
+                                                span{
+                                                    color: $color3;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            .sub-menu-column:nth-child(1n + 2) {
+                                border-left: 2px solid #e0e0e073;
+                                padding-left: 20px;
+                                width: 380px;
+                            }
+                            .img-url{
+                                text-decoration: none;
+                                .menu-img{
+                                    background-image: url("https://ion.r2net.com/images/HomePage/SpecialGalleriesBanner/N/Desktop/DiamondPendants.jpg");
+                                    content: "";
+                                    width: 400px;
+                                    background-position: 50%;
+                                    background-size: cover;
+                                    border: none;
+                                    box-sizing: border-box;
+                                    height: 100%;
+                                    opacity: 1;
+                                    width: 700px;
+                                    z-index: 100;
+                                }
+                            }
+                        }
+                    }
+                    &:hover{
+                        .menu-item-a{
+                            color: $color1;
+                            font-weight: 700;
+                            font-size: 13px;
+                            &::after{
+                                width: 100%;
+                            }
+                        }
+                        .sub-menu-container{
+                            visibility: inherit;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Breadcrumb */
+.xb-breadCrumb{
+    width: 100%;
+    display: block;
+    position: relative;
+    .thisBreadcrumb{
+        width: 100%;
+        .item{
+            width: 10px;
+            padding-left: 15px;
+            text-decoration: none;
+            color: $color1;
+            font-family: $primary-font-light;
+            font-weight: 900;
+            &:not(:last-child){
+                &::after{
+                    content: ">";
+                    padding-left: 4px;
+                }
+            }
+            &:last-child{
+                color: $color3;
+                opacity: 0.6;
+            }
+        }
+    }
+}
+
+//Footer menu
+.footerMenu{
+    width: 100%;
+    position: relative;
+    background-color: $white;
+    color: $dark;
+    .xb-footer{
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        padding: 35px 0;
+        .footerColumn{
+            flex: 1;
+            width: 25%;
+            margin: auto;
+            &.thisColumn{
+                a{
+                    float: left;
+                    width: 100%;
+                    text-decoration: none;
+                    color: $color1;
+                    line-height: 2;
+                    position: relative;
+                    display: flex;
+                    flex-direction: column;
+                    img{
+                        width: 200px;
+                        margin-bottom: 20px;
+                    }
+                    &::after{
+                        content: "";
+                        position: absolute;
+                        width: 100%;
+                        color: $color1;
+                        bottom: 0;
+                        left: 0;
+                    }
+                }
+                &:not(:first-child){
+                    border-left: 2px solid rgba(224,224,224,.4509803922);
+                    padding-left: 20px;
+                    width: 380px;
+                }
+            }
+        }
+    }
+}
+
+/* Copyright */
+.auraCopyRight{
+    position: relative;
+    width: 100%;
+    text-align: center;
+    background-color: $color1;
+    color: $white;
+    font-weight: 700;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    a{
+        color: $white;
+        text-align: center;
+        text-decoration: none;
+        span{
+            color: $color2;
+            font-weight: 900;
+        }
+    }
+}

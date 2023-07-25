@@ -3,20 +3,11 @@
 
 //Vars scss import
 @import "scss/_var";
-@import "scss/auraClass";
 
 //globals
-@import "scss/button";
 @import "scss/fonts";
 @import "scss/global";
 
 
-
-//Global elements import
-@import "scss/menu";
-
-
 //Components scss import
-@import "components/productListv1";
-@import "components/_banner";
-@import "components/another";
+@import "scss/component";
